@@ -34,9 +34,17 @@ const Timer = () => {
 
   useEffect(() => {
     if (start) {
-      if (time[2] === 5) setTime([time[0], time[1] + 1, 0]); //SS
+      if (time[2] === 5)
+        setTime((prevState) => {
+          const tempCopy = [...prevState];
+          return [tempCopy[0], tempCopy[1] + 1, 0];
+        }); //SS
 
-      if (time[1] === 5) setTime([time[0] + 1, 0, time[2]]); //MM
+      if (time[1] === 5)
+        setTime((prevState) => {
+          const tempCopy = [...prevState];
+          return [tempCopy[0] + 1, 0, tempCopy[2]];
+        }); //MM
 
       if (time[0] === 5) {
         //HH
