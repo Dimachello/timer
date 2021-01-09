@@ -1,0 +1,54 @@
+.TimerContainer {
+  padding-top: 2rem;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.TimeValuesContainer {
+  min-width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+}
+
+.TimeValuesContainer div {
+  flex-basis: 20%;
+  min-height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 10px;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.TimerControlsContainer {
+  min-width: 50%;
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+.btn {
+  flex-basis: 20%;
+  padding: 1rem 0.5rem;
+  font-size: 1.5rem;
+  border: 0px solid transparent;
+  border-radius: 10px;
+  background-color: rgb(41, 83, 196);
+  color: white;
+  cursor: pointer;
+}
+
+.btn:disabled {
+  background-color: rgb(217, 28, 69);
+}
+
+.btn:focus {
+  outline: 0px solid transparent;
+}
